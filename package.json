@@ -1,16 +1,17 @@
 {
   "name": "websocketclient",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "React-based WebSocket client for sending and receiving real-time commands",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "PORT=1992 react-scripts start"
+    "start": "PORT=1992 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:ci": "CI=true react-scripts test --watchAll=false"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "felipem554",
+  "license": "MIT",
   "dependencies": {
-    "antd": "^5.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
